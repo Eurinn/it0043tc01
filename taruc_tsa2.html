@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Form</title>
+</head>
+<body>
+<center>
+<form action="/submit-pokemon" method="post">
+<table align="center">
+<tr>
+<table align="center">
+<td>National Dex Number:</td>
+<td><input type="number" name="nationalDexNumber" min="1"></td>
+</table>
+</tr>
+<br>
+<tr>
+<td>
+<table align="center">
+<label><input type="radio" name="generation" value="1"> Generation 1</label>
+<label><input type="radio" name="generation" value="2"> Generation 2</label>
+<label><input type="radio" name="generation" value="3"> Generation 3</label>
+<label><input type="radio" name="generation" value="4"> Generation 4</label>
+<label><input type="radio" name="generation" value="5"> Generation 5</label>
+<label><input type="radio" name="generation" value="6"> Generation 6</label>
+<label><input type="radio" name="generation" value="7"> Generation 7</label>
+<label><input type="radio" name="generation" value="8"> Generation 8</label>
+<label><input type="radio" name="generation" value="9"> Generation 9</label>
+</table>
+</td>
+</tr>
+<br>
+<tr>
+<table align="center">
+<td>Pokémon Name:</td>
+<td><input type="text" name="pokemonName"></td>
+</table>
+</tr>
+<br>
+<tr>
+<td>Image:</td>
+<td><input type="file" name="pokemonImage"></td>
+</tr>
+<br>
+<br>
+<tr>
+<td>Type 1:</td>
+<td>
+<select name="type1">
+<option value="Normal">Normal</option>
+<option value="Fire">Fire</option>
+<option value="Water">Water</option>
+<option value="Electric">Electric</option>
+<option value="Grass">Grass</option>
+<option value="Ice">Ice</option>
+<option value="Fighting">Fighting</option>
+<option value="Poison">Poison</option>
+<option value="Ground">Ground</option>
+<option value="Flying">Flying</option>
+<option value="Psychic">Psychic</option>
+<option value="Bug">Bug</option>
+<option value="Rock">Rock</option>
+<option value="Ghost">Ghost</option>
+<option value="Dragon">Dragon</option>
+<option value="Dark">Dark</option>
+<option value="Steel">Steel</option>
+<option value="Fairy">Fairy</option>
+</select>
+</td>
+<td>Type 2:</td>
+<td>
+<select name="type2">
+<option value="Normal">Normal</option>
+<option value="Fire">Fire</option>
+<option value="Water">Water</option>
+<option value="Electric">Electric</option>
+<option value="Grass">Grass</option>
+<option value="Ice">Ice</option>
+<option value="Fighting">Fighting</option>
+<option value="Poison">Poison</option>
+<option value="Ground">Ground</option>
+<option value="Flying">Flying</option>
+<option value="Psychic">Psychic</option>
+<option value="Bug">Bug</option>
+<option value="Rock">Rock</option>
+<option value="Ghost">Ghost</option>
+<option value="Dragon">Dragon</option>
+<option value="Dark">Dark</option>
+<option value="Steel">Steel</option>
+<option value="Fairy">Fairy</option>
+</select>
+</td>
+</tr>
+<br>
+<br>
+<tr>
+<td>Evolves From:</td>
+<td><input type="text" name="evolvesFrom"></td>
+<td>Evolves To:</td>
+<td><input type="text" name="evolvesTo"></td>
+</tr>
+<br>
+<br>
+<tr>
+<td>Nickname:</td>
+<td><input type="text" name="nickname"></td>
+</tr>
+<br>
+<br>
+<tr>
+<td>Birthday:</td>
+<td><input type="date" name="birthday"></td>
+</tr>
+<br>
+<br>
+<tr>
+<td colspan="4" align="center">
+<!-- Submit button -->
+<input type="submit" value="Submit">
+</td>
+</tr>
+</form>
+
+ <table border="1" align = "center"> <tr> 
+ <th>National Dex</th> 
+ <th>Generation</th>
+ <th>Pokemon Name</th>
+ <th>Image</th> 
+ <th>Type 1</th> 
+ <th>Type 2</th>
+ <th>Evolves From</th> 
+ <th>Evolves To</th> 
+ <th>Nickname</th>
+ <th>Birthday</th> 
+ </tr> <tr> 
+ <tr align = "center">
+ <th>#0005</th> 
+ <td>Gen I</td> 
+ <td>Charmeleon</td> 
+ <td><img src="https://archives.bulbagarden.net/media/upload/thumb/0/05/0005Charmeleon.png/70px-0005Charmeleon.png" alt="My Image"</td> 
+ <td colspan="2" style="background-color: #F08030; color: white;">Fire</td>
+ <td>Charmander</td> 
+ <td>Charizard</td> 
+ <td>Cloud</td> 
+ <td>01/02/04</td> 
+ </tr> <tr>
+ <tr align = "center">  
+ <th>#0156</th> 
+ <td>Gen II</td> 
+ <td>Quilava</td> 
+ <td><img src="https://archives.bulbagarden.net/media/upload/thumb/3/3f/0156Quilava.png/70px-0156Quilava.png" alt="My Image"</td> 
+ <td colspan="2" style="background-color: #F08030; color: white;">Fire</td> 
+ <td>Cyndaquil</td> 
+ <td>Thyplosion</td> 
+ <td>Jeco</td> 
+ <td>02/04/05</td> 
+ </tr> <tr>
+ <tr align = "center"> 
+ <th>#0256</th> 
+ <td>Gen III</td> 
+ <td>Combusken</td> 
+ <td><img src="https://archives.bulbagarden.net/media/upload/thumb/7/78/0256Combusken.png/70px-0256Combusken.png" alt="My Image"</td> 
+ <td style="background-color: #F08030; color: white;">Fire</td>
+ <td style="background-color: #C22E28; color: white;">Fighting</td> 
+ <td>Torchick</td> 
+ <td>Blaziken</td> 
+ <td>Marc</td> 
+ <td>03/14/05</td> 
+ </tr> <tr> 
+ <tr align = "center">
+ <th>#0387</th>
+ <td>Gen IV</td> 
+ <td>Turtwig</td> 
+ <td><img src="https://archives.bulbagarden.net/media/upload/thumb/6/68/0387Turtwig.png/70px-0387Turtwig.png" alt="My Image"</td>
+ <td colspan="2" style="background-color: #7AC74C; color: white;">Grass</td>  
+ <td>-</td> 
+ <td>Grotle</td> 
+ <td>Giro</td> 
+ <td>10/15/05</td>
+ </tr> <tr>
+ <tr align = "center">
+ <th>#0494</th>
+ <td>Gen V</td>
+ <td>Victini</td>
+ <td><img src="https://archives.bulbagarden.net/media/upload/thumb/f/f6/0494Victini.png/70px-0494Victini.png" alt="My Image"</td>
+ <td style="background-color: #FF00FF; color: white;">Psychic</td>
+ <td style="background-color: #F08030; color: white;">Fire</td> 
+ <td>-</td>
+ <td>-</td>
+ <td>Lea</td>
+ <td>01/04/05</td>
+ </tr> <tr>
+ <tr align = "center">
+ <th>#0658</th>
+ <td>Gen VI</td>
+ <td>Greninja</td>
+ <td><img src="https://archives.bulbagarden.net/media/upload/thumb/d/d9/0658Greninja.png/70px-0658Greninja.png" alt="My Image"</td>
+ <td style="background-color: #6390F0; color: white;">Water</td>
+ <td style="background-color: #705746; color: white;">Dark</td>
+ <td>Frogedier</td>
+ <td>-</td>
+ <td>Ken</td>
+ <td>09/11/04</td>
+ </tr> <tr>
+ <tr align = "center">
+ <th>#0730</th>
+ <td>Gen VII</td>
+ <td>Primarina</td>
+ <td><img src="https://archives.bulbagarden.net/media/upload/thumb/1/19/0730Primarina.png/70px-0730Primarina.png" alt="My Image"</td>
+ <td style="background-color: #6390F0; color: white;">Water</td>
+ <td style="background-color: #D685AD; color: white;">Fairy</td>
+ <td>Brionne</td>
+ <td>-</td>
+ <td>Juls</td>
+ <td>06/30/05</td>
+ </tr> <tr>
+ <tr align = "center">
+ <th>#0849</th>
+ <td>Gen VIII</td>
+ <td>Toxtricity</td>
+ <td><img src="https://archives.bulbagarden.net/media/upload/thumb/0/0f/0849Toxtricity-Low_Key.png/70px-0849Toxtricity-Low_Key.png" alt="My Image"</td>
+ <td style="background-color: #F7D02C; color: white;">Electric</td>
+ <td style="background-color: #A33EA1; color: white;">Poison</td>
+ <td>Toxel</td>
+ <td>-</td>
+ <td>Dane</td>
+ <td>06/02/04</td>
+ </tr> <tr>
+ <tr align = "center">
+ <th>#0926</th>
+ <td>Gen IX</td>
+ <td>Fidough</td>
+ <td><img src="https://archives.bulbagarden.net/media/upload/thumb/8/82/0926Fidough.png/70px-0926Fidough.png" alt="My Image"</td>
+ <td colspan="2"style="background-color: #D685AD; color: white;">Fairy</td>
+ <td>-</td>
+ <td>Dashbun</td>
+ <td>Ely</td>
+ <td>11/08/05</td>
+ </tr> <tr>
+ <tr align = "center"> 
+ <th>#01126</th>
+ <td>Gen X</td>
+ <td>Icy</td>
+ <td><img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/441971861_2151327315239528_6133784593997852348_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=7Eorb4yJ9soQ7kNvgG_MACa&_nc_ht=scontent.fmnl8-1.fna&oh=03_Q7cD1QFz3yDjf-Sz_1dgimyFrX-bWhpPuF3pCiqWmQ--Njd3Vw&oe=66631764" alt="My Image" height="100"</td>
+ <td colspan="2"style="background-color: #96D9D6; color: white;">Ice</td>>
+ <td>Ike</td>
+ <td>Icing</td>
+ <td>Ice</td>
+ <td>11/05/04</td>
+ </tr>
+ </table>
+
+</center>
+</body>
+</html>
