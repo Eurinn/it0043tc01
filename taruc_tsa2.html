@@ -1,125 +1,119 @@
-<!DOCTYPE html>
-<html>
+!DOCTYPE html>
+<html lang = "en">
 <head>
-<title>Pokemon Form</title>
+  <title>PokeDex</title>
 </head>
 <body>
-<center>
-<form action="/submit-pokemon" method="post">
-<table align="center">
-<tr>
-<table align="center">
-<td>National Dex Number:</td>
-<td><input type="number" name="nationalDexNumber" min="1"></td>
-</table>
-</tr>
-<br>
-<tr>
-<td>
-<table align="center">
-<label><input type="radio" name="generation" value="1"> Generation 1</label>
-<label><input type="radio" name="generation" value="2"> Generation 2</label>
-<label><input type="radio" name="generation" value="3"> Generation 3</label>
-<label><input type="radio" name="generation" value="4"> Generation 4</label>
-<label><input type="radio" name="generation" value="5"> Generation 5</label>
-<label><input type="radio" name="generation" value="6"> Generation 6</label>
-<label><input type="radio" name="generation" value="7"> Generation 7</label>
-<label><input type="radio" name="generation" value="8"> Generation 8</label>
-<label><input type="radio" name="generation" value="9"> Generation 9</label>
-</table>
-</td>
-</tr>
-<br>
-<tr>
-<table align="center">
-<td>Pokémon Name:</td>
-<td><input type="text" name="pokemonName"></td>
-</table>
-</tr>
-<br>
-<tr>
-<td>Image:</td>
-<td><input type="file" name="pokemonImage"></td>
-</tr>
-<br>
-<br>
-<tr>
-<td>Type 1:</td>
-<td>
-<select name="type1">
-<option value="Normal">Normal</option>
-<option value="Fire">Fire</option>
-<option value="Water">Water</option>
-<option value="Electric">Electric</option>
-<option value="Grass">Grass</option>
-<option value="Ice">Ice</option>
-<option value="Fighting">Fighting</option>
-<option value="Poison">Poison</option>
-<option value="Ground">Ground</option>
-<option value="Flying">Flying</option>
-<option value="Psychic">Psychic</option>
-<option value="Bug">Bug</option>
-<option value="Rock">Rock</option>
-<option value="Ghost">Ghost</option>
-<option value="Dragon">Dragon</option>
-<option value="Dark">Dark</option>
-<option value="Steel">Steel</option>
-<option value="Fairy">Fairy</option>
-</select>
-</td>
-<td>Type 2:</td>
-<td>
-<select name="type2">
-<option value="Normal">Normal</option>
-<option value="Fire">Fire</option>
-<option value="Water">Water</option>
-<option value="Electric">Electric</option>
-<option value="Grass">Grass</option>
-<option value="Ice">Ice</option>
-<option value="Fighting">Fighting</option>
-<option value="Poison">Poison</option>
-<option value="Ground">Ground</option>
-<option value="Flying">Flying</option>
-<option value="Psychic">Psychic</option>
-<option value="Bug">Bug</option>
-<option value="Rock">Rock</option>
-<option value="Ghost">Ghost</option>
-<option value="Dragon">Dragon</option>
-<option value="Dark">Dark</option>
-<option value="Steel">Steel</option>
-<option value="Fairy">Fairy</option>
-</select>
-</td>
-</tr>
-<br>
-<br>
-<tr>
-<td>Evolves From:</td>
-<td><input type="text" name="evolvesFrom"></td>
-<td>Evolves To:</td>
-<td><input type="text" name="evolvesTo"></td>
-</tr>
-<br>
-<br>
-<tr>
-<td>Nickname:</td>
-<td><input type="text" name="nickname"></td>
-</tr>
-<br>
-<br>
-<tr>
-<td>Birthday:</td>
-<td><input type="date" name="birthday"></td>
-</tr>
-<br>
-<br>
-<tr>
-<td colspan="4" align="center">
-<!-- Submit button -->
-<input type="submit" value="Submit">
-</td>
-</tr>
+  <form action="#" name="pokemon" method="post" align="center">
+	
+	<label for="dex">National Dex:</label>
+		<input type="number" name="dex" id="dex" min="1"> <br> <br>
+	
+	<input type="radio" name="gen" id="gen1" value="gen1">
+		<label for="gen1">Generation 1</label>
+		
+	<input type="radio" name="gen" id="gen2" value="gen2">
+		<label for="gen2">Generation 2</label>
+		
+	<input type="radio" name="gen" id="gen3" value="gen3">
+		<label for="gen3">Generation 3</label>
+		
+	<input type="radio" name="gen" id="gen4" value="gen4">
+		<label for="gen4">Generation 4</label>
+		
+	<input type="radio" name="gen" id="gen5" value="gen4">
+		<label for="gen5">Generation 5</label>
+		
+	<input type="radio" name="gen" id="gen6" value="gen4">
+		<label for="gen6">Generation 6</label>
+		
+    <input type="radio" name="gen" id="gen7" value="gen4">
+		<label for="gen7">Generation 7</label>
+		
+	<input type="radio" name="gen" id="gen8" value="gen4">
+		<label for="gen8">Generation 8</label>
+		
+	<input type="radio" name="gen" id="gen8" value="gen4">
+		<label for="gen8">Generation 9</label> <br> <br>
+
+        <tr> 
+            <td>Pokémon Name:</td>
+            <td><input type="text" name="pokemonName"></td>
+        </tr> <br> <br>
+      
+            <td>Image:</td>
+            <td><input type="file" name="pokemonImage"></td>
+        </tr> <br> <br>
+        <tr>
+           <td>Type 1:</td>
+                    <td>
+                        <select name="type1">
+                            <option value="Normal">Normal</option>
+                            <option value="Fire">Fire</option>
+                            <option value="Water">Water</option>
+                            <option value="Electric">Electric</option>
+                            <option value="Grass">Grass</option>
+                            <option value="Ice">Ice</option>
+                            <option value="Fighting">Fighting</option>
+                            <option value="Poison">Poison</option>
+                            <option value="Ground">Ground</option>
+                            <option value="Flying">Flying</option>
+                            <option value="Psychic">Psychic</option>
+                            <option value="Bug">Bug</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Ghost">Ghost</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Dark">Dark</option>
+                            <option value="Steel">Steel</option>
+                            <option value="Fairy">Fairy</option>
+                        </select>
+                    </td>
+                    <td>Type 2:</td>
+                    <td>
+                        <select name="type2">
+                            <option value="Normal">Normal</option>
+                            <option value="Fire">Fire</option>
+                            <option value="Water">Water</option>
+                            <option value="Electric">Electric</option>
+                            <option value="Grass">Grass</option>
+                            <option value="Ice">Ice</option>
+                            <option value="Fighting">Fighting</option>
+                            <option value="Poison">Poison</option>
+                            <option value="Ground">Ground</option>
+                            <option value="Flying">Flying</option>
+                            <option value="Psychic">Psychic</option>
+                            <option value="Bug">Bug</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Ghost">Ghost</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Dark">Dark</option>
+                            <option value="Steel">Steel</option>
+                            <option value="Fairy">Fairy</option>
+                        </select>
+                    </td>
+        </tr> <br> <br>
+        <tr>
+            <td>Evolves From:</td>
+            <td><input type="text" name="evolvesFrom"></td>
+        </tr>
+        <tr>
+            <td>Evolves To:</td>
+            <td><input type="text" name="evolvesTo"></td>
+        </tr> <br> <br>
+        <tr>
+            <td>Nickname:</td>
+            <td><input type="text" name="nickname"></td>
+        </tr> <br> <br>
+        <tr>
+            <td>Birthday:</td>
+            <td><input type="date" name="birthday"></td>  
+        </tr> <br> <br>
+	
+    <input type="submit" value="Submit">
 </form>
+
+  <table border="1" align="center">
+<tr>
 
  <table border="1" align = "center"> <tr> 
  <th>National Dex</th> 
