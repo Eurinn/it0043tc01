@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+body {
+
+}
+img{
+  width: 500px;
+  height: 250px;
+  margin-left: 100px;
+}
+body {
+    background-image: url("Pyramid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+  }
+h1 {
+  color: rgb(179, 20, 86);
+  font-family: "Bebas Neue", sans-serif;
+        font-weight: 1000;
+        font-style: normal;
+        font-size: 60px;
+  
+}
+h2{
+    color: rgb(179, 20, 86);
+    font-family: "Bebas Neue", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        margin-top: 10;
+        margin-bottom: 10;
+        font-size: 25px;
+        
+}
+p {
+    color: white;
+    {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        padding-left: 1000;
+        padding-right: 1000;
+        font-size: 12px;
+      }
+      
+}
+p {
+    color: white;
+    {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        padding-left: 1000;
+        padding-right: 1000;
+        font-size: 12px;
+      }
+     h2{
+        color: rgb(140, 35, 167);
+        font-family: "Bebas Neue", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            margin-top: 10;
+            margin-bottom: 10;
+            font-size: 25px;
+}
+</style>
+</head>
+<body>
+
+
+</body>
+</html>
