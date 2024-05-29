@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s ease;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -8,13 +15,20 @@ body {
     background-size: cover;
 }
 
-.container {
+.container{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 90vw;
+    margin: 20px auto;
+    padding: 20px;
     display: flex;
+    flex-direction: row;
+    align-items: start;
     flex-wrap: wrap;
-    gap: 10px;
-    max-width: 1200px;
-    transition: all 0.5s ease;
+    justify-content: space-evenly;
 }
+
 
 .pokemon-card {
     display: flex;
@@ -48,11 +62,67 @@ body {
     margin-left: 10px;
 }
 
-.pokemon-card:hover {
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12ecb7ae-7059-48df-a4f8-2e3fb7858606/d47rmjf-de88a574-49c8-4dcf-9df4-7e11722e8bec.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEyZWNiN2FlLTcwNTktNDhkZi1hNGY4LTJlM2ZiNzg1ODYwNlwvZDQ3cm1qZi1kZTg4YTU3NC00OWM4LTRkY2YtOWRmNC03ZTExNzIyZThiZWMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.loswJAzDdppbY9aZ-eQs3DKvAdY7W91eosZhapx7gFU);
-    background-size: cover;
+.pokemon-card[data-name="venonat"] {
+    background-color: #8416af;
 }
 
+.pokemon-card[data-name="dratini"] {
+    background-color: #69a6eb;
+}
+
+.pokemon-card[data-name="meowth"] {
+    background-color: #e6b68a;
+}
+
+.pokemon-card[data-name="weedle"] {
+    background-color: #d19256;
+}
+
+.pokemon-card[data-name="psyduck"] {
+    background-color: #d4c536;
+}
+
+.pokemon-card[data-name="eevee"] {
+    background-color: #5f3208;
+}
+
+.pokemon-card[data-name="zubat"] {
+    background-color: #6e66dd;
+}
+
+.pokemon-card[data-name="snorlax"] {
+    background-color: #166db4;
+}
+.pokemon-card[data-name="eevee"] {
+    background-color: #5f3208;
+}
+
+.pokemon-card[data-name="bellsprout"] {
+    background-color: #effd23;
+}
+
+.pokemon-card[data-name="squirtle"] {
+    background-color: #45b8ee;
+}
+
+.pokemon-card[data-name="rattata"] {
+    background-color: #c80fe0;
+}
+
+.pokemon-card[data-name="caterpie"] {
+    background-color: #52ad3c;
+}
+p{
+    display: none;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+
+.types{
+    display: none;
+    text-align: center;
+}
 
 @media (max-width: 900px) {
     .pokemon-card {
@@ -125,4 +195,64 @@ body {
     .pokemon-card:hover {
         background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12ecb7ae-7059-48df-a4f8-2e3fb7858606/d47rmjf-de88a574-49c8-4dcf-9df4-7e11722e8bec.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEyZWNiN2FlLTcwNTktNDhkZi1hNGY4LTJlM2ZiNzg1ODYwNlwvZDQ3cm1qZi1kZTg4YTU3NC00OWM4LTRkY2YtOWRmNC03ZTExNzIyZThiZWMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.loswJAzDdppbY9aZ-eQs3DKvAdY7W91eosZhapx7gFU);
     }
+	.types{
+		width: 100%;
+		margin: 0 10rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.type1, .type2{
+		display: inline-block;
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+		margin: 0.5rem;
+		color: white;
+		font-size: 1.5rem;
+		flex-grow: 1;
+	}
+}
+
+.bug{
+background-color: #A6B91A;
+}
+
+.fire{
+background-color: #EE8130;
+}
+
+.dragon{
+background-color: #6F35FC;
+}
+
+.normal{
+background-color: #A8A77A;
+}
+
+.fairy{
+background-color: #D685AD;
+}
+
+.fighting{
+background-color: #C22E28;
+}
+
+.psychic{
+background-color: #F95587;
+}
+
+.flying{
+background-color: #A98FF3;
+}
+
+.water{
+background-color: #6390F0;
+}
+
+.poison{
+    background-color: #A33EA1;
+}
+
+.grass{
+    background-color: #7AC74C; 
 }
